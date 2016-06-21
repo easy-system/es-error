@@ -23,16 +23,14 @@ class ResolverFactoryTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->filesDir = dirname(__DIR__)
-                        . PHP_DS
-                        . 'files'
-                        . PHP_DS;
+        $this->filesDir = dirname(__DIR__) . PHP_DS . 'files' . PHP_DS;
     }
 
     public function testMake()
     {
-        $file            = $this->filesDir . 'development.phtml';
-        $config          = new SystemConfig();
+        $file   = $this->filesDir . 'development.phtml';
+        $config = new SystemConfig();
+
         $config['error'] = [
             'html' => [
                 'templates' => [

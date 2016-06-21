@@ -17,10 +17,7 @@ class TemplateResolverTest extends \PHPUnit_framework_TestCase
 
     public function setUp()
     {
-        $this->filesDir = dirname(__DIR__)
-                        . PHP_DS
-                        . 'files'
-                        . PHP_DS;
+        $this->filesDir = dirname(__DIR__) . PHP_DS . 'files' . PHP_DS;
     }
 
     public function testGetTemplates()

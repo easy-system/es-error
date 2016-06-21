@@ -24,14 +24,11 @@ class ErrorRendererTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        if (PHP_MAJOR_VERSION < 7 && ! class_exists('Error', false)) {
+        if (! class_exists('Error', false)) {
             require_once 'Error.php';
         }
 
-        $this->filesDir = dirname(__DIR__)
-                        . PHP_DS
-                        . 'files'
-                        . PHP_DS;
+        $this->filesDir = dirname(__DIR__) . PHP_DS . 'files' . PHP_DS;
     }
 
     public function testSetResolver()
