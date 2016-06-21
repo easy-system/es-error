@@ -29,9 +29,9 @@ class ErrorRendererTest extends \PHPUnit_Framework_TestCase
         }
 
         $this->filesDir = dirname(__DIR__)
-                        . DIRECTORY_SEPARATOR
+                        . PHP_DS
                         . 'files'
-                        . DIRECTORY_SEPARATOR;
+                        . PHP_DS;
     }
 
     public function testSetResolver()
